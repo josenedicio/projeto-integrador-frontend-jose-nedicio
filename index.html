@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Top 3 do Sertanejo Brasileiro</title>
@@ -14,27 +16,29 @@
 
 <body>
 
-    <h1>Top 3 do Sertanejo Brasileiro</h1>
+    <header>
+        <h1>Top 3 do Sertanejo Brasileiro</h1>
 
-    <p>
-        Este projeto apresenta três grandes nomes do sertanejo brasileiro
-        da atualidade, trazendo algumas curiosidades, músicas de destaque
-        e informações sobre suas carreiras.
-    </p>
+        <p>
+            Este projeto apresenta três grandes nomes do sertanejo brasileiro
+            da atualidade, trazendo algumas curiosidades, músicas de destaque
+            e informações sobre suas carreiras.
+        </p>
+
+        <nav>
+           <li><a href="#henrique-e-juliano">1º lugar - Henrique & Juliano</a></li> 
+            <li><a href="#gusttavo-lima">2º lugar - Gusttavo Lima</a></li>
+            <li><a href="#ze-neto-e-cristiano">3º lugar - Zé Neto & Cristiano</a></li>
+        </nav>
+    </header>
+
+    <main>
 
 
-    <h4>Top 3 atual do Brasil</h4>
 
-<ul>
-        <li>1º lugar - Henrique & Juliano</li>
-        <li>2º lugar - Gusttavo Lima</li>
-        <li>3º lugar - Zé Neto & Cristiano</li>
-</ul>
-
-
+<article id="henrique-e-juliano">
     <h2>🥇Henrique & Juliano</h2>
 
-    <!-- henriqueejuliano.jpg -->
     <img
         src="assets/images/henriqueejuliano.jpg"
         alt="Dupla sertaneja Henrique e Juliano"
@@ -52,10 +56,11 @@
     </p>
 
     <h3>Músicas de destaque</h3>
-
+<ul>
         <li>Liberdade Provisória</li>
         <li>Cuida Bem Dela</li>
         <li>Arranhão</li>
+</ul>
 
     <a
     href="https://open.spotify.com/intl-pt/artist/3p7PcrEHaaKLJnPUGOtRlT"
@@ -64,11 +69,14 @@
 >
     Escute-os no Spotify
 </a>
+
+</article>
     
+<article id="gusttavo-lima">
+
 
     <h2>🥈Gusttavo Lima(O embaixador)</h2>
 
-    <!-- gusttavolima.jpg -->
     <img
         src="assets/images/gusttavolima.jpg"
         alt="Cantor sertanejo Gusttavo Lima"
@@ -86,11 +94,11 @@
     </p>
 
     <h3>Músicas de destaque</h3>
-
+<ul>
         <li>Bloqueado</li>
         <li>Apelido Carinhoso</li>
         <li>Ficha Limpa</li>
-
+</ul>
         <a
     href="https://open.spotify.com/intl-pt/artist/7MiDcPa6UiV3In7lIM71IN"
     target="_blank"
@@ -98,11 +106,12 @@
 >
     Escute-o no Spotify
 </a>
+</article>
 
+<article id="ze-neto-e-cristiano">
 
     <h2>🥉Zé Neto & Cristiano</h2>
 
-    <!-- zenetocristiano.jpg -->
     <img
         src="assets/images/zenetoecristiano.jpg"
         alt="Dupla sertaneja Zé Neto e Cristiano"
@@ -119,11 +128,11 @@
     </p>
 
     <h3>Músicas de destaque</h3>
-
+<ul>
         <li>Largado às Traças</li>
         <li>Notificação Preferida</li>
         <li>Seu Polícia</li>
-
+</ul>
         <a
     href="https://open.spotify.com/intl-pt/artist/487N2T9nIPEHrlTZLL3SQs"
     target="_blank"
@@ -131,6 +140,10 @@
 >
     Escute-os no Spotify
 </a>
+</article>
+
+<section>
+    <h2>Resumo dos Artistas</h2>
 <table border="1">
     <tr>
         <th>Artista</th>
@@ -152,6 +165,120 @@
         <td>Largado às Traças</td>
     </tr>
 </table>
+
+</section>
+
+        <section>
+
+            <h2>Sugira uma música sertaneja</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Dados da sugestão</legend>
+
+                    <label for="nome">Seu nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        minlength="3"
+                        maxlength="50"
+                        required
+                    >
+
+
+                    <label for="email">Seu e-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+
+                    <label for="artista">Artista</label>
+                    <input
+                        type="text"
+                        id="artista"
+                        name="artista"
+                        required
+                    >
+
+
+                    <label for="musica">Música</label>
+                    <input
+                        type="text"
+                        id="musica"
+                        name="musica"
+                        required
+                    >
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Artista favorito do Top 3</legend>
+
+                    <input
+                        type="radio"
+                        id="favorito-henrique-juliano"
+                        name="favorito"
+                        value="Henrique e Juliano"
+                    >
+
+                    <label for="favorito-henrique-juliano">
+                        Henrique & Juliano
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="favorito-gusttavo"
+                        name="favorito"
+                        value="Gusttavo Lima"
+                    >
+
+                    <label for="favorito-gusttavo">
+                        Gusttavo Lima
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="favorito-ze-neto"
+                        name="favorito"
+                        value="Ze Neto e Cristiano"
+                    >
+
+                    <label for="favorito-ze-neto">
+                        Zé Neto & Cristiano
+                    </label>
+
+                </fieldset>
+
+
+                <button type="submit">
+                    Enviar sugestão
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Projeto desenvolvido para a disciplina de Desenvolvimento Front-end para Web.
+        </p>
+
+    </footer>
+
 
 </body>
 

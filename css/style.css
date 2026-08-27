@@ -42,3 +42,8 @@ table {
 th, td {
     padding: 10px;
 }
+
+video {
+    display: block;
+    margin: 20px auto;
+}

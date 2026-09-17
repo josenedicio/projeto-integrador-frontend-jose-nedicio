@@ -3,281 +3,312 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Top 3 do Sertanejo Brasileiro</title>
+<title>Top 3 do Sertanejo Brasileiro</title>
 
-    <link rel="icon" href="data:,">
+<link rel="icon" href="data:,">
 
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Top 3 do Sertanejo Brasileiro</h1>
+<header id="cabecalho-principal">
+<h1>Top 3 do Sertanejo Brasileiro</h1>
 
-        <p>
-            Este projeto apresenta três grandes nomes do sertanejo brasileiro
-            da atualidade, trazendo algumas curiosidades, músicas de destaque
-            e informações sobre suas carreiras.
-        </p>
+<p>
+Este projeto apresenta três grandes nomes do sertanejo brasileiro
+da atualidade, trazendo algumas curiosidades, músicas de destaque
+e informações sobre suas carreiras.
+</p>
 
-        <nav>
-           <li><a href="#henrique-e-juliano">1º lugar - Henrique & Juliano</a></li> 
-            <li><a href="#gusttavo-lima">2º lugar - Gusttavo Lima</a></li>
-            <li><a href="#ze-neto-e-cristiano">3º lugar - Zé Neto & Cristiano</a></li>
-        </nav>
-    </header>
-
-    <main>
-
-
-
-<article id="henrique-e-juliano">
-    <h2>🥇Henrique & Juliano</h2>
-
-    <img
-        src="assets/images/henriqueejuliano.jpg"
-        alt="Dupla sertaneja Henrique e Juliano"
-        width="300"
-    >
-
-    <p>
-        Henrique & Juliano são uma dupla sertaneja brasileira formada
-        pelos irmãos Henrique e Juliano. A dupla foi a primeira brasileira
-         a atingir 1,5 bilhão de visualizações no YouTube, os irmãos, naturais 
-         de Palmeirópolis (TO) começaram a cantar ainda jovens, influenciados pelo pai.
-        O primeiro grande projeto foi Ao Vivo em Palmas, em 2012. Depois vieram trabalhos
-         como Ao Vivo em Brasília, Novas Histórias, O Céu Explica Tudo, Menos É Mais e Manifesto Musical
-         esse que foi o álbum mais ouvido do Spotify Brasil em 2022.
-    </p>
-
-    <h3>Músicas de destaque</h3>
+<nav>
 <ul>
-        <li>Liberdade Provisória</li>
-        <li>Cuida Bem Dela</li>
-        <li>Arranhão</li>
+<li><a href="#henrique-e-juliano">1º lugar - Henrique & Juliano</a></li>
+<li><a href="#gusttavo-lima">2º lugar - Gusttavo Lima</a></li>
+<li><a href="#ze-neto-e-cristiano">3º lugar - Zé Neto & Cristiano</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+
+
+<article id="henrique-e-juliano" class="card">
+<h2>🥇Henrique & Juliano</h2>
+
+<img
+src="assets/images/henriqueejuliano.jpg"
+alt="Dupla sertaneja Henrique e Juliano"
+width="300"
+>
+
+<p>
+Henrique & Juliano são uma dupla sertaneja brasileira formada
+pelos irmãos Henrique e Juliano. A dupla foi a primeira brasileira
+a atingir 1,5 bilhão de visualizações no YouTube, os irmãos, naturais
+de Palmeirópolis (TO) começaram a cantar ainda jovens, influenciados pelo pai.
+O primeiro grande projeto foi Ao Vivo em Palmas, em 2012. Depois vieram trabalhos
+como Ao Vivo em Brasília, Novas Histórias, O Céu Explica Tudo, Menos É Mais e Manifesto Musical
+esse que foi o álbum mais ouvido do Spotify Brasil em 2022.
+</p>
+
+<h3 class="destaque">Músicas de destaque</h3>
+<ul>
+<li>Liberdade Provisória</li>
+<li>Cuida Bem Dela</li>
+<li>Arranhão</li>
 </ul>
 
-    <a
-    href="https://open.spotify.com/intl-pt/artist/3p7PcrEHaaKLJnPUGOtRlT"
-    target="_blank"
-    rel="noopener noreferrer"
+
+<!-- preload="metadata" foi escolhido para carregar apenas
+as informações básicas do vídeo sem baixar o arquivo inteiro -->
+
+<video
+controls
+width="600"
+preload="metadata"
+poster="assets/images/henriqueejuliano2.jpg"
 >
-    Escute-os no Spotify
+<source
+src="assets/images/liberdade-provisoria.mp4.mp4"
+type="video/mp4"
+>
+
+<source
+src="assets/images/liberdade-provisoria.webm.webm"
+type="video/webm"
+>
+
+Seu navegador não suporta a reprodução de vídeos.
+</video>
+
+
+<a
+class="botao"
+href="https://open.spotify.com/intl-pt/artist/3p7PcrEHaaKLJnPUGOtRlT"
+target="_blank"
+rel="noopener noreferrer"
+>
+Escute-os no Spotify
 </a>
 
+
 </article>
-    
-<article id="gusttavo-lima">
+
+<article id="gusttavo-lima" class="card">
 
 
-    <h2>🥈Gusttavo Lima(O embaixador)</h2>
+<h2>🥈Gusttavo Lima(O embaixador)</h2>
 
-    <img
-        src="assets/images/gusttavolima.jpg"
-        alt="Cantor sertanejo Gusttavo Lima"
-        width="350"
-    >
-
-    <p>
-        Gusttavo Lima é um cantor e compositor brasileiro conhecido
-        por grandes sucessos do sertanejo e por sua forte presença
-        em shows e eventos por todo o Brasil.Nasceu em Presidente Olegário (MG), com 
-        o nome de batismo sendo Nivaldo Batista começou muito cedo na música e chegou 
-        a sair de casa aos 9 anos para seguir carreira ao lado dos irmãos, aos 18 anos
-         começou a carreira solo,mas foi em 2010 que lançou Inventor dos Amores, projeto
-          que o colocou definitivamente no mapa nacional.
-    </p>
-
-    <h3>Músicas de destaque</h3>
-<ul>
-        <li>Bloqueado</li>
-        <li>Apelido Carinhoso</li>
-        <li>Ficha Limpa</li>
-</ul>
-        <a
-    href="https://open.spotify.com/intl-pt/artist/7MiDcPa6UiV3In7lIM71IN"
-    target="_blank"
-    rel="noopener noreferrer"
+<img
+src="assets/images/gusttavolima.jpg"
+alt="Cantor sertanejo Gusttavo Lima"
+width="350"
 >
-    Escute-o no Spotify
+
+<p>
+Gusttavo Lima é um cantor e compositor brasileiro conhecido
+por grandes sucessos do sertanejo e por sua forte presença
+em shows e eventos por todo o Brasil.Nasceu em Presidente Olegário (MG), com
+o nome de batismo sendo Nivaldo Batista começou muito cedo na música e chegou
+a sair de casa aos 9 anos para seguir carreira ao lado dos irmãos, aos 18 anos
+começou a carreira solo,mas foi em 2010 que lançou Inventor dos Amores, projeto
+que o colocou definitivamente no mapa nacional.
+</p>
+
+<h3 class="destaque">Músicas de destaque</h3>
+<ul>
+<li>Bloqueado</li>
+<li>Apelido Carinhoso</li>
+<li>Ficha Limpa</li>
+</ul>
+<a
+class="botao"
+href="https://open.spotify.com/intl-pt/artist/7MiDcPa6UiV3In7lIM71IN"
+target="_blank"
+rel="noopener noreferrer"
+>
+Escute-o no Spotify
 </a>
 </article>
 
-<article id="ze-neto-e-cristiano">
+<article id="ze-neto-e-cristiano" class="card">
 
-    <h2>🥉Zé Neto & Cristiano</h2>
+<h2>🥉Zé Neto & Cristiano</h2>
 
-    <img
-        src="assets/images/zenetoecristiano.jpg"
-        alt="Dupla sertaneja Zé Neto e Cristiano"
-        width="350"
-    >
-
-    <p>
-        Zé Neto & Cristiano são uma dupla sertaneja brasileira que
-        se tornou a primeira a conseguir 1 bilhão de views em um único vídeo.
-        São amigos de infância de São José do Rio Preto (SP) e começaram a dupla em 2011.
-        O reconhecimento nacional veio principalmente com “Seu Polícia”, em 2016 e depois 
-        vieram outros sucessos como “Largado às Traças”, “Notificação Preferida”, “Estado Decadente” etc.
-        
-    </p>
-
-    <h3>Músicas de destaque</h3>
-<ul>
-        <li>Largado às Traças</li>
-        <li>Notificação Preferida</li>
-        <li>Seu Polícia</li>
-</ul>
-        <a
-    href="https://open.spotify.com/intl-pt/artist/487N2T9nIPEHrlTZLL3SQs"
-    target="_blank"
-    rel="noopener noreferrer"
+<img
+src="assets/images/zenetoecristiano.jpg"
+alt="Dupla sertaneja Zé Neto e Cristiano"
+width="350"
 >
-    Escute-os no Spotify
+
+<p>
+Zé Neto & Cristiano são uma dupla sertaneja brasileira que
+se tornou a primeira a conseguir 1 bilhão de views em um único vídeo.
+São amigos de infância de São José do Rio Preto (SP) e começaram a dupla em 2011.
+O reconhecimento nacional veio principalmente com “Seu Polícia”, em 2016 e depois
+vieram outros sucessos como “Largado às Traças”, “Notificação Preferida”, “Estado Decadente” etc.
+
+</p>
+
+<h3 class="destaque">Músicas de destaque</h3>
+<ul>
+<li>Largado às Traças</li>
+<li>Notificação Preferida</li>
+<li>Seu Polícia</li>
+</ul>
+<a
+class="botao"
+href="https://open.spotify.com/intl-pt/artist/487N2T9nIPEHrlTZLL3SQs"
+target="_blank"
+rel="noopener noreferrer"
+>
+Escute-os no Spotify
 </a>
 </article>
 
 <section>
-    <h2>Resumo dos Artistas</h2>
-<table border="1">
-    <tr>
-        <th>Artista</th>
-        <th>Música de destaque</th>
-    </tr>
+<h2>Resumo dos Artistas</h2>
+<table>
+<tr>
+<th>Artista</th>
+<th>Música de destaque</th>
+</tr>
 
-    <tr>
-        <td>Henrique & Juliano</td>
-        <td>Liberdade Provisória</td>
-    </tr>
+<tr>
+<td>Henrique & Juliano</td>
+<td>Liberdade Provisória</td>
+</tr>
 
-    <tr>
-        <td>Gusttavo Lima</td>
-        <td>Bloqueado</td>
-    </tr>
+<tr>
+<td>Gusttavo Lima</td>
+<td>Bloqueado</td>
+</tr>
 
-    <tr>
-        <td>Zé Neto & Cristiano</td>
-        <td>Largado às Traças</td>
-    </tr>
+<tr>
+<td>Zé Neto & Cristiano</td>
+<td>Largado às Traças</td>
+</tr>
 </table>
 
 </section>
 
-        <section>
+<section>
 
-            <h2>Sugira uma música sertaneja</h2>
+<h2>Sugira uma música sertaneja</h2>
 
-            <form>
+<form>
 
-                <fieldset>
+<fieldset>
 
-                    <legend>Dados da sugestão</legend>
+<legend>Dados da sugestão</legend>
 
-                    <label for="nome">Seu nome</label>
-                    <input
-                        type="text"
-                        id="nome"
-                        name="nome"
-                        minlength="3"
-                        maxlength="50"
-                        required
-                    >
-
-
-                    <label for="email">Seu e-mail</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                    >
+<label for="nome">Seu nome</label>
+<input
+type="text"
+id="nome"
+name="nome"
+minlength="3"
+maxlength="50"
+required
+>
 
 
-                    <label for="artista">Artista</label>
-                    <input
-                        type="text"
-                        id="artista"
-                        name="artista"
-                        required
-                    >
+<label for="email">Seu e-mail</label>
+<input
+type="email"
+id="email"
+name="email"
+required
+>
 
 
-                    <label for="musica">Música</label>
-                    <input
-                        type="text"
-                        id="musica"
-                        name="musica"
-                        required
-                    >
-
-                </fieldset>
+<label for="artista">Artista</label>
+<input
+type="text"
+id="artista"
+name="artista"
+required
+>
 
 
-                <fieldset>
+<label for="musica">Música</label>
+<input
+type="text"
+id="musica"
+name="musica"
+required
+>
 
-                    <legend>Artista favorito do Top 3</legend>
-
-                    <input
-                        type="radio"
-                        id="favorito-henrique-juliano"
-                        name="favorito"
-                        value="Henrique e Juliano"
-                    >
-
-                    <label for="favorito-henrique-juliano">
-                        Henrique & Juliano
-                    </label>
+</fieldset>
 
 
-                    <input
-                        type="radio"
-                        id="favorito-gusttavo"
-                        name="favorito"
-                        value="Gusttavo Lima"
-                    >
+<fieldset>
 
-                    <label for="favorito-gusttavo">
-                        Gusttavo Lima
-                    </label>
+<legend>Artista favorito do Top 3</legend>
 
+<input
+type="radio"
+id="favorito-henrique-juliano"
+name="favorito"
+value="Henrique e Juliano"
+>
 
-                    <input
-                        type="radio"
-                        id="favorito-ze-neto"
-                        name="favorito"
-                        value="Ze Neto e Cristiano"
-                    >
-
-                    <label for="favorito-ze-neto">
-                        Zé Neto & Cristiano
-                    </label>
-
-                </fieldset>
+<label for="favorito-henrique-juliano">
+Henrique & Juliano
+</label>
 
 
-                <button type="submit">
-                    Enviar sugestão
-                </button>
+<input
+type="radio"
+id="favorito-gusttavo"
+name="favorito"
+value="Gusttavo Lima"
+>
 
-            </form>
-
-        </section>
-
-    </main>
+<label for="favorito-gusttavo">
+Gusttavo Lima
+</label>
 
 
-    <footer>
+<input
+type="radio"
+id="favorito-ze-neto"
+name="favorito"
+value="Ze Neto e Cristiano"
+>
 
-        <p>
-            Projeto desenvolvido para a disciplina de Desenvolvimento Front-end para Web.
-        </p>
+<label for="favorito-ze-neto">
+Zé Neto & Cristiano
+</label>
 
-    </footer>
+</fieldset>
+
+
+<button type="submit">
+Enviar sugestão
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>
+Projeto desenvolvido para a disciplina de Desenvolvimento Front-end para Web.
+</p>
+
+</footer>
 
 
 </body>

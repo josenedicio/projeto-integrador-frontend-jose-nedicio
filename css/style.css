@@ -46,6 +46,7 @@ display: block;
 margin: 0 auto;
 }
 
+
 p {
 font-size: 1.125rem;
 max-width: 62.5rem;
@@ -110,3 +111,4 @@ video {
 display: block;
 margin: var(--espacamento-padrao) auto;
 }
+

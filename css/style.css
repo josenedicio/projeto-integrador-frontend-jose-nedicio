@@ -113,3 +113,128 @@ video {
     display: block;
     margin: var(--espacamento-padrao) auto;
 }
+section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+fieldset {
+    border: none;
+    border-top: 2px solid #fff;
+    padding: 20px 0;
+    margin-bottom: 8px;
+}
+
+fieldset + fieldset {
+    padding-top: 24px;
+}
+
+legend {
+    padding: 0 4px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: #000;
+    color: #fff;
+    transition: box-shadow 0.2s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+/* Radios como "chips" */
+fieldset:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+fieldset:last-of-type legend {
+    width: 100%;
+}
+
+fieldset:last-of-type input[type="radio"] {
+    display: none;
+}
+
+fieldset:last-of-type label {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    background: #000;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+fieldset:last-of-type input[type="radio"]:checked + label {
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    padding: 12px;
+    background: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #000;
+    color: #fff;
+}

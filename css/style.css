@@ -55,14 +55,61 @@ p {
 }
 
 .card {
-    padding: 0.5rem;
-    border: 0.0625rem solid transparent;
-    margin: var(--espacamento-padrao) auto;
+    padding: 1rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.4);
+    border-radius: var(--raio-borda);
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    max-width: 33.75rem;
+    height: auto;
+}
+
+.card video {
+    display: block;
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+
+    margin: 1.5rem auto;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem);
 }
 
 .botao {
-    display: inline-block;
-    padding: 0.3rem 0.5rem;
+    display: block;
+    width: fit-content;
+
+    padding: 0.6rem 1rem;
+    margin: 1rem auto;
+
+    border: 0.0625rem solid #ffffff;
+    border-radius: var(--raio-borda);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.botao:link,
+.botao:visited {
+    color: #ffffff;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
 }
  
 .destaque {
@@ -81,19 +128,34 @@ a:visited {
     color: #152246;
 }
 
-a:hover {
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
     color: #000000;
     text-decoration: underline;
+}
+
+nav a:focus-visible {
+    outline: 0.125rem solid #ffffff;
+    outline-offset: 0.25rem;
+    border-radius: 0.2rem;
 }
 
 a:active {
     color: #333333;
 }
 
-ul {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding: 0.5rem;
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    list-style: none;
+    padding: 1rem;
 }
 
 table {
@@ -103,138 +165,27 @@ table {
     border-spacing: 0 0.5rem;    /* espaço entre linhas (vertical), sem espaço entre colunas */
 }
 
-th,
-td {
-    padding: 0.625rem;
-    border: none;                /* remove as bordas */
+.grade-artistas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(18rem, 1fr));
+
+    gap: 2rem;
+
+    max-width: 75rem;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
-video {
-    display: block;
-    margin: var(--espacamento-padrao) auto;
-}
-section {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 32px;
-    background: #000;
-    border: 1px solid #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #fff;
+.grade-artistas .card:nth-child(1) {
+    border-top: 0.25rem solid #ffffff;
 }
 
-section h2 {
-    margin-top: 0;
-    margin-bottom: 24px;
-    font-size: 1.6rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.grade-artistas .card:nth-child(2) {
+    border-top: 0.25rem solid #cccccc;
 }
 
-fieldset {
-    border: none;
-    border-top: 2px solid #fff;
-    padding: 20px 0;
-    margin-bottom: 8px;
-}
-
-fieldset + fieldset {
-    padding-top: 24px;
-}
-
-legend {
-    padding: 0 4px;
-    font-weight: 700;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #fff;
-}
-
-form label {
-    display: block;
-    margin-top: 16px;
-    margin-bottom: 6px;
-    font-weight: 500;
-    color: #ccc;
-    font-size: 0.9rem;
-}
-
-form input[type="text"],
-form input[type="email"] {
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    font-size: 1rem;
-    box-sizing: border-box;
-    background: #000;
-    color: #fff;
-    transition: box-shadow 0.2s;
-}
-
-form input[type="text"]:focus,
-form input[type="email"]:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
-}
-
-/* Radios como "chips" */
-fieldset:last-of-type {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    align-items: center;
-}
-
-fieldset:last-of-type legend {
-    width: 100%;
-}
-
-fieldset:last-of-type input[type="radio"] {
-    display: none;
-}
-
-fieldset:last-of-type label {
-    display: inline-block;
-    margin: 0;
-    padding: 8px 16px;
-    border: 1px solid #fff;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 400;
-    background: #000;
-    color: #fff;
-    transition: all 0.2s;
-}
-
-fieldset:last-of-type input[type="radio"]:checked + label {
-    background: #fff;
-    border-color: #fff;
-    color: #000;
-}
-
-button[type="submit"] {
-    display: block;
-    width: 100%;
-    margin-top: 24px;
-    padding: 12px;
-    background: #fff;
-    color: #000;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-}
-
-button[type="submit"]:hover {
-    background: #000;
-    color: #fff;
+.grade-artistas .card:nth-child(3) {
+    border-top: 0.25rem solid #999999;
 }

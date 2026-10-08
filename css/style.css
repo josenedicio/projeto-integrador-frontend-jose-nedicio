@@ -133,36 +133,43 @@ a:visited {
 }
 
 nav a {
+    display: block;
+    padding: 0.6rem 1rem;
+ 
+    border: 0.0625rem solid #ffffff;
+    border-radius: var(--raio-borda);
+ 
     text-decoration: none;
-    transition: color 0.3s ease;
+ 
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
 }
-
+ 
 nav a:link,
 nav a:visited {
     color: #ffffff;
 }
-
+ 
 nav a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
 }
-
+ 
 nav a:focus-visible {
     outline: 0.125rem solid #ffffff;
     outline-offset: 0.25rem;
     border-radius: 0.2rem;
 }
-
-nav a:active {
-    color: #ffffff;
-}
-
+ 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-
+    gap: 1rem;
+ 
     list-style: none;
     padding: 1rem;
 }

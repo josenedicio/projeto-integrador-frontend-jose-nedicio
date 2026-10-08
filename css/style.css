@@ -8,6 +8,10 @@
     --raio-borda: 0.3rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('../assets/images/shows.png');
     background-size: cover;
@@ -133,8 +137,13 @@ nav a {
     transition: color 0.3s ease;
 }
 
+nav a:link,
+nav a:visited {
+    color: #ffffff;
+}
+
 nav a:hover {
-    color: #000000;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -144,8 +153,8 @@ nav a:focus-visible {
     border-radius: 0.2rem;
 }
 
-a:active {
-    color: #333333;
+nav a:active {
+    color: #ffffff;
 }
 
 nav ul {
@@ -188,4 +197,111 @@ table {
 
 .grade-artistas .card:nth-child(3) {
     border-top: 0.25rem solid #999999;
+}
+
+/* ===== Formulário ===== */
+.formulario {
+    max-width: 30rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.formulario:hover {
+    transform: none; /* evita o formulário "pular" enquanto a pessoa digita */
+}
+
+.formulario fieldset {
+    border: 0.0625rem solid rgba(255, 255, 255, 0.4);
+    border-radius: var(--raio-borda);
+    padding: 1rem;
+    margin: 0 0 1.25rem;
+}
+
+.formulario legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.formulario label {
+    display: block;
+    margin: 0.75rem 0 0.25rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Campos de texto e e-mail */
+.formulario input[type="text"],
+.formulario input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 0.75rem;
+
+    background-color: #000000;
+    color: #ffffff;
+    border: 0.0625rem solid #ffffff;
+    border-radius: var(--raio-borda);
+
+    font-size: 1rem;
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus {
+    outline: none;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 0 0.1875rem rgba(255, 255, 255, 0.4);
+}
+
+/* Botões de rádio */
+.formulario .opcao {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.formulario .opcao label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.formulario input[type="radio"] {
+    accent-color: #ffffff;
+    cursor: pointer;
+}
+
+/* Botão de enviar (mesmo estilo do seu .botao) */
+.formulario button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 1rem;
+
+    background-color: transparent;
+    color: #ffffff;
+    border: 0.0625rem solid #ffffff;
+    border-radius: var(--raio-borda);
+
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.formulario button[type="submit"]:hover {
+    transform: scale(1.03);
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.formulario button[type="submit"]:focus-visible {
+    outline: 0.125rem solid #ffffff;
+    outline-offset: 0.25rem;
 }

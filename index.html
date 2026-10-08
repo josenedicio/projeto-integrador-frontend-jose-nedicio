@@ -140,25 +140,24 @@
     </tr>
 </table>
 
-<!--  <video
+  <video
         controls
         width="500"
         preload="metadata"
-        poster="assets/images/horadeamar.jpg"
+        poster="assets/images/gt.jpg"
     >
         <source
-            src="assets/images/Gusttavo Lima - Na Hora de Amar (Spending My Time) - DVD O Embaixador (Ao Vivo) - Gusttavo Lima Oficial (1080p).mp4"
+            src="assets/images/Gusttavo Lima - Mundo de Ilusões (Clipe Oficial) - (720p)MP4.mp4"
             type="video/mp4"
         >
 
-        <source
-            src="assets/images/Gusttavo Lima - Na Hora de Amar (Spending My Time) - DVD O Embaixador (Ao Vivo) - Gusttavo Lima Oficial (1080p).webm"
+     <!--   <source
+            src="assets/images/Gusttavo Lima - Mundo de Ilusões (Clipe Oficial) - (720p)webm.webm"
             type="video/webm"
-        >
+        > -->
 
         Seu navegador não suporta a reprodução de vídeos.
     </video>
--->
 
         <a
     class="botao"
@@ -204,25 +203,24 @@
     </tr>
 </table>
 
-<!--  <video
+  <video
         controls  
         width="500"
         preload="metadata"
-        poster="assets/images/largado.jpg"
+        poster="assets/images/st.jpg"
     >
         <source
-            src="assets/images/Zé Neto e Cristiano - LARGADO ÀS TRAÇAS - #EsqueceOMundoLaFora - Zé Neto e Cristiano (1080p).mp4"
+            src="assets/images/Status-que-eu-nao.mp4"
             type="video/mp4"
         >
 
-        <source
-            src="assets/images/Zé Neto e Cristiano - LARGADO ÀS TRAÇAS - #EsqueceOMundoLaFora - Zé Neto e Cristiano (1080p).webm"
+    <!--    <source
+            src="assets/images/Status-que-eu-nao.webm"
             type="video/webm"
-        >
+        > -->
 
         Seu navegador não suporta a reprodução de vídeos.
     </video>
-    -->
 
         <a
     class="botao"
@@ -237,7 +235,7 @@
 
         <section>
             <h2>Sugira uma música sertaneja</h2>
-            <form>
+            <form class="card formulario">
                 <fieldset>
                     <legend>Dados da sugestão</legend>
                     <label for="nome">Seu nome</label>
@@ -272,35 +270,23 @@
                     >
                 </fieldset>
                 <fieldset>
-                    <legend>Artista favorito do Top 3</legend>
-                    <input
-                        type="radio"
-                        id="favorito-henrique-juliano"
-                        name="favorito"
-                        value="Henrique e Juliano"
-                    >
-                    <label for="favorito-henrique-juliano">
-                        Henrique & Juliano
-                    </label>
-                    <input
-                        type="radio"
-                        id="favorito-gusttavo"
-                        name="favorito"
-                        value="Gusttavo Lima"
-                    >
-                    <label for="favorito-gusttavo">
-                        Gusttavo Lima
-                    </label>
-                    <input
-                        type="radio"
-                        id="favorito-ze-neto"
-                        name="favorito"
-                        value="Ze Neto e Cristiano"
-                    >
-                    <label for="favorito-ze-neto">
-                        Zé Neto & Cristiano
-                    </label>
-                </fieldset>
+    <legend>Artista favorito do Top 3</legend>
+
+    <div class="opcao">
+        <input type="radio" id="favorito-henrique-juliano" name="favorito" value="Henrique e Juliano">
+        <label for="favorito-henrique-juliano">Henrique & Juliano</label>
+    </div>
+
+    <div class="opcao">
+        <input type="radio" id="favorito-gusttavo" name="favorito" value="Gusttavo Lima">
+        <label for="favorito-gusttavo">Gusttavo Lima</label>
+    </div>
+
+    <div class="opcao">
+        <input type="radio" id="favorito-ze-neto" name="favorito" value="Ze Neto e Cristiano">
+        <label for="favorito-ze-neto">Zé Neto & Cristiano</label>
+    </div>
+</fieldset>
                 <button type="submit">
                     Enviar sugestão
                 </button>
